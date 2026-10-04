@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="An HTML-only recreation of the AltSchool Africa sign-up form for my first assessment.">
+    <title>Application Form | AltSchool Assessment</title>
+</head>
+<body>
+    <header id="top">
+        <nav aria-label="Main navigation">
+            <ul>
+            <li><a href="index.html">My Profile</a></li>
+            <li><a href="form.html" aria-current="page">Application Form</a></li>
+            </ul>
+        </nav>
+        <p><strong>AltSchool Africa</strong></p>
+    </header>
+
+    <main id="main-content">
+        <p><a href="form.html" aria-current="page">Sign up</a> <a href="https://portal.altschoolafrica.com/auth/signin?callbackUrl=/">Sign in</a></p>
+        <h1 id="signup-heading">Sign up</h1>
+        <p>Create an account to get started on your learning journey</p>
+        <p><strong>Important: Your name will appear on your certificate exactly as entered</strong></p>
+
+        <form method="dialog" aria-labelledby="signup-heading">
+            <p>
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="first-name">First name</label><br>
+                <input type="text" id="first-name" name="first-name" autocomplete="given-name" required>
+            </p>
+            <p>
+                <label for="last-name">Last name</label><br>
+                <input type="text" id="last-name" name="last-name" autocomplete="family-name" required>
+            </p>
+            <p>
+                <label for="phone">Phone number</label><br>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" required><br>
+            </p>
+            <p>
+                <label for="password">Password</label><br>
+                <input type="password" id="password" name="password" autocomplete="new-password" required>
+            </p>
+            <p>By clicking Create account, I agree to Terms of Use and acknowledge that I have read the Privacy Policy.</p>
+            <button type="submit" disabled>Create account</button>
+        </form>
+
+        <p>OR</p>
+        <button type="button" disabled>Login with Google</button>
+    </main>
+
+    <footer>
+        <address>Abeokuta, Ogun State, Nigeria</address>
+        <p><small>&copy; 2026 Aderemi Julia. All rights reserved.</small></p>
+    </footer>
+</body>
+</html>
